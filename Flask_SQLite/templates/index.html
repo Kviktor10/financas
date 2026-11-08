@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#102c2a">
+  <title>Mercado &amp; Finanças — Flask + SQLite</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body data-mode="flask">
+  <div id="appShell" class="app-shell hidden">
+    <aside class="sidebar">
+      <div class="brand-lockup"><div class="brand-icon">M<span>F</span></div><div><b>Mercado &amp; Finanças</b><small>Flask + SQLite</small></div></div>
+      <div class="nav-caption">MENU PRINCIPAL</div>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <button class="nav-item active" data-view="dashboard"><span>⌂</span>Visão geral</button>
+        <button class="nav-item" data-view="shopping"><span>🛒</span>Compras</button>
+        <button class="nav-item" data-view="products"><span>▦</span>Produtos</button>
+        <button class="nav-item" data-view="services"><span>🧁</span>Serviços e receitas</button>
+        <button class="nav-item" data-view="obligations"><span>◷</span>Contas e parcelas</button>
+        <button class="nav-item" data-view="finance"><span>⇄</span>Movimentações</button>
+        <button class="nav-item" data-view="reports"><span>▥</span>Relatórios</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="local-indicator"><i></i><div><b>Banco SQLite</b><small>Arquivo local no computador</small></div></div><button class="nav-item" data-view="settings"><span>⚙</span>Configurações</button><div class="sidebar-foot">Mercado &amp; Finanças<br><small>Flask + SQLite local</small></div></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><div class="topbar-left"><button id="mobileMenu" class="mobile-menu" aria-label="Abrir menu">☰</button><div><span id="topEyebrow" class="eyebrow">VISÃO GERAL</span><h1 id="pageTitle">Painel inicial</h1></div></div><div class="topbar-right"><span id="modeLabel" class="mode-label">Flask + SQLite</span><div class="top-balance"><small>Saldo atual</small><b id="topBalance">R$ 0,00</b></div></div></header>
+      <div id="viewRoot" class="view-root"><div class="loading-state">Conectando ao banco SQLite…</div></div>
+      <footer class="app-footer">Mercado &amp; Finanças <span>·</span> Flask + banco SQLite no computador, sem login e sem cofre de credenciais</footer>
+    </main>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toastRoot" class="toast-root" aria-live="polite"></div>
+  <script src="/static/qrcode-vendor.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
