@@ -12,7 +12,7 @@
     ['contas','🧾','Contas'],['lazer','🎟️','Lazer'],['pets','🐾','Pets'],['outros','📦','Outros']
   ].map(([id,icon,name]) => ({id,icon,name}));
   const UNIT_GROUPS = {
-    mass: { units: ['g','kg'], factor: {g:1,kg:1000}, base:'g' },
+    mass: { units: ['mg', 'g', 'kg'], factor: { mg: 0.001, g: 1, kg: 1000 }, base: 'g'},
     volume: { units: ['ml','L'], factor: {ml:1,L:1000}, base:'ml' },
     count: { units: ['un'], factor: {un:1}, base:'un' }
   };
